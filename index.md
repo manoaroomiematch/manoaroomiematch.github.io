@@ -5,11 +5,15 @@ Contract: https://docs.google.com/document/d/1NyC7RrhGOPZXYOhnl6m2bFdEJb18yUVXbs
 ---
 
 ## Names of the proposers
-**Kyla Kanemoto
+Kyla Kanemoto
+
 Katelynn Crouch
+
 Anh Minh Nguyen
+
 Adones Morales
-Kincade Morimoto**  
+
+Kincade Morimoto 
 
 ---
 

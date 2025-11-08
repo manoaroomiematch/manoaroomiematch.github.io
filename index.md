@@ -1,4 +1,4 @@
-Contract: https://docs.google.com/document/d/1NyC7RrhGOPZXYOhnl6m2bFdEJb18yUVXbsEGcyLYXpI/edit?tab=t.0
+[Team Contract](https://docs.google.com/document/d/1NyC7RrhGOPZXYOhnl6m2bFdEJb18yUVXbsEGcyLYXpI/edit?tab=t.0)
 
 # Mānoa RoomieMatch Proposal Essay
 

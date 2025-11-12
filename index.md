@@ -15,6 +15,8 @@ Adones Morales
 
 Kincade Morimoto 
 
+Bryan Kikugawa
+
 ---
 
 ## Overview

@@ -140,6 +140,16 @@ AI suggests UH dorms based on:
 - Room type (double, suite, apartment)  
 - AC vs. non-AC  
 
+### Language Translation for International Students
+- Automatically translate profiles, bios, and messages.
+- Help international students communicate more easily.
+- Encourage cross-cultural roommate matching.
+
+### UH Authentication for Verification
+- Integrate UH Single Sign-On for secure login.
+- Verify that all users are current UH students.
+- Build trust and ensure campus safety.
+
 ### Advanced Matching Insights
 Allow users to see:
 - Compatibility heatmaps  
@@ -164,4 +174,6 @@ Sync UH class schedules to identify:
 Shared tools for:
 - Chore rotation  
 - Expense tracking  
-- Grocery list coordination  
+- Grocery list coordination
+
+

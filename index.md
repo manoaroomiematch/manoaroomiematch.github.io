@@ -229,9 +229,9 @@ The following milestones document the development history of Mānoa RoomieMatch.
 
 ### Milestone 1: Mockup pages development
 
-Milestone 1 was managed using [Manoā RoomieMatch GitHub Project Board M1](https://github.com/bowfolios/bowfolios/projects/1):
+Milestone 1 was managed using [Manoā RoomieMatch GitHub Project Board M1](https://github.com/orgs/manoaroomiematch/projects/2/views/1):
 
-![](images/project-board-1.png)
+![](img/m1_issues.png)
 
 ### Milestone 2
 TBD

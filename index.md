@@ -91,7 +91,7 @@ Once a student creates their lifestyle and housing profile, the system stores th
 ### Profile Setup Page
 
 <div class="text-center p-4">
-  <img width="500px" src="../img/profile_setup_mock.png" class="img-thumbnail" >
+  <img width="300px" src="../img/profile_setup_mock.png" class="img-thumbnail" >
 </div>
 
 - Multi-step lifestyle survey  
@@ -112,7 +112,7 @@ Once a student creates their lifestyle and housing profile, the system stores th
 ### Match Details Page
 
 <div class="text-center p-4">
-  <img width="500px" src="../img/match_details_mock.png" class="img-thumbnail" >
+  <img width="300px" src="../img/match_details_mock.png" class="img-thumbnail" >
 </div>
 
 - Side-by-side comparison  
@@ -122,7 +122,7 @@ Once a student creates their lifestyle and housing profile, the system stores th
 ### Admin Home Page
 
 <div class="text-center p-4">
-  <img width="500px" src="../img/admin_home_page_mock.png" class="img-thumbnail" >
+  <img width="300px" src="../img/admin_home_page_mock.png" class="img-thumbnail" >
 </div>
 
 - Manage users  

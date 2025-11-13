@@ -68,33 +68,63 @@ Once a student creates their lifestyle and housing profile, the system stores th
 ## Some mockup page ideas
 
 ### Landing Page
+
+<div class="text-center p-4">
+  <img width="500px" src="../img/landing_page_mock.png" class="img-thumbnail" >
+</div>
+
 - Explanation of the platform  
 - “Start Matching” call-to-action  
 - Summary of AI features  
 
 ### User Home Page
+
+<div class="text-center p-4">
+  <img width="500px" src="../img/user_home_page_mock.png" class="img-thumbnail" >
+</div>
+
 - Overview of user’s profile  
 - Compatibility highlights  
 - Quick access to matches  
 - Notifications  
 
 ### Profile Setup Page
+
+<div class="text-center p-4">
+  <img width="500px" src="../img/profile_setup_mock.png" class="img-thumbnail" >
+</div>
+
 - Multi-step lifestyle survey  
 - Progress indicator  
 - Save-as-you-go  
 
 ### Browse Matches Page
+
+<div class="text-center p-4">
+  <img width="500px" src="../img/browser_matches_mock.png" class="img-thumbnail" >
+</div>
+
 - List or grid of potential roommates  
 - Match percentages  
 - Preview of key traits  
 - “View Details” button  
 
 ### Match Details Page
+
+<div class="text-center p-4">
+  <img width="500px" src="../img/match_details_mock.png" class="img-thumbnail" >
+</div>
+
 - Side-by-side comparison  
 - AI-generated compatibility report  
 - Suggested conversation prompts  
 
 ### Admin Home Page
+
+<div class="text-center p-4">
+  <img width="500px" src="../img/admin_home_page_mock.png" class="img-thumbnail" >
+</div>
+
 - Manage users  
 - Moderate flagged content  
 - Add/edit lifestyle categories  

@@ -137,7 +137,7 @@ Once a profile is completed, users are taken to their personalized home page.
 Users can explore potential roommates on the Browse Matches page.
 
 <div class="text-center p-4">
-  <img width="500px" src="../img/browsermatches_m1" class="img-thumbnail" >
+  <img width="500px" src="../img/browsematches_m1" class="img-thumbnail" >
 </div>
 
 - List or grid of potential roommates  
@@ -346,7 +346,7 @@ The goal of Milestone 1 was to create AI-Generated photos of the UI for this pro
 
 Milestone 1 was managed using [Manoā RoomieMatch GitHub Project Board M1](https://github.com/orgs/manoaroomiematch/projects/2/views/1):
 
-![](img/issues_m2.png)
+![](img/m1_issues.png)
 
 <div class="text-center p-4">
   <img width="500px" src="../img/landing_page_mock.png" class="img-thumbnail" >
@@ -378,7 +378,7 @@ The goal of Milestone 2 was to use the completed front-end pages and improve the
 
 Milestone 2 was managed using [Manoā RoomieMatch GitHub Project Board M2](https://github.com/orgs/manoaroomiematch/projects/5/views/1?visibleFields=%5B%22Title%22%2C%22Status%22%2C%22Assignees%22%2C239381711%2C239381747%2C239381801%2C239381851%5D):
 
-<!-- ![](img/m1_issues.png) -->
+[](img/issues_m2.png)
 
 ### Milestone 3
 TBD

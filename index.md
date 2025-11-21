@@ -58,7 +58,7 @@ Our code of conduct can be found [here](https://docs.google.com/document/d/1NyC7
 
 ## Deployment
 
-Mānoa RoomieMatch is currently being deployed [here](https://github.com/manoaroomiematch/manoaroomiematch.git)
+Mānoa RoomieMatch is currently being deployed on [ Vercel ](https://manoaroomiematch.vercel.app/)
 
 ---
 
@@ -377,7 +377,7 @@ The goal of Milestone 1 was to create AI-Generated photos of the UI for this pro
 
 Milestone 1 was managed using [Manoā RoomieMatch GitHub Project Board M1](https://github.com/orgs/manoaroomiematch/projects/2/views/1):
 
-![](img/m1_issues.png)
+![](img/m1_done.png)
 
 <div class="text-center p-4">
   <img width="500px" src="../img/landing_page_mock.png" class="img-thumbnail" >

@@ -52,7 +52,7 @@ Our code of conduct can be found [here](https://docs.google.com/document/d/1NyC7
 * [Mānoa RoomieMatch Organization](https://github.com/manoaroomiematch)
 * [Mānoa RoomieMatch Home Page](https://manoaroomiematch.github.io)
 * [Mānoa RoomieMatch Application](https://github.com/manoaroomiematch/manoaroomiematch.git)
-* [Mānoa RoomieMatch Organization](https://github.com/orgs/manoaroomiematch/projects/2/views/1)
+* [M1 Project Board](https://github.com/orgs/manoaroomiematch/projects/2/views/1)
 ---
 
 ## Deployment
@@ -209,45 +209,111 @@ We are interested in your experience using Mānoa RoomieMatch!
 
 ## Developer Guide
 
-This section provides information for developers wishing to use this code base as a basis for their own development tasks.
+This guide provides all the information developers need to install, configure, and run the Roomie Match application.
 
-### Installation
+---
 
-First, [install PostgreSQL](https://www.postgresql.org/download/). Then create a database for your application.
+## **1. Installation**
 
-Second, go to [https://github.com/RateMyTool/RateMyTools_SC](https://github.com/RateMyTool/RateMyTools_SC), and click the "Use this template" button. Complete the dialog box to create a new repository that you own that is initialized with this template's files.
+### **Install PostgreSQL**
 
-Third, go to your newly created repository, and click the "Clone or download" button to download your new GitHub repo to your local file system. Using [GitHub Desktop](https://desktop.github.com/) is a great choice if you use MacOS or Windows.
+Download and install PostgreSQL from the official website:
+[https://www.postgresql.org/download/](https://www.postgresql.org/download/)
 
-Fourth, cd into the directory of your local copy of the repo, and install third party libraries with:
+Create a new database for the application:
+
+```
+$ createdb manoaroomiematch
+```
+
+### **Create Your Repository**
+
+1. Go to the template repository:
+   [https://github.com/manoaroomiematch/manoaroomiematch.git](https://github.com/manoaroomiematch/manoaroomiematch.git)
+2. Click **"Use this template"**.
+3. Complete the dialog to generate your own repository based on the template.
+
+### **Clone Your Repository**
+
+Use GitHub Desktop (recommended for Mac/Windows) or Git from the terminal to clone the repo.
+
+```
+$ git clone <your-repo-url>
+$ cd <your-repo-folder>
+```
+
+### **Install Dependencies**
+
+Install third‑party libraries:
 
 ```
 $ npm install
 ```
 
-Fifth, create a .env file from the sample.env file. Edit the .env file to set the DATABASE_URL to point to your PostgreSQL database.
+### **Environment Setup (.env)**
 
-### Running the system
+1. Copy the `sample.env` file and rename it to `.env`.
+2. Set the `DATABASE_URL` to point to your PostgreSQL database.
 
-Once the libraries are installed and the database is configured, you can run the application by invoking:
+Example:
+
+```
+DATABASE_URL="postgresql://username:password@localhost:5432/manoaroomiematch"
+```
+
+### **Set Up Prisma**
+
+Run Prisma migrations to initialize your PostgreSQL tables:
+
+```
+$ npx prisma migrate dev
+```
+
+Seed the database:
+
+```
+$ npx prisma db seed
+```
+
+---
+
+## **2. Running the System**
+
+Start the development server:
 
 ```
 $ npm run dev
 ```
 
-The first time you run the app, it will create default data in the database.
+On first run, the app initializes default data in the database.
 
-### Viewing the running app
+---
 
-If all goes well, the application will appear at [http://localhost:3000](http://localhost:3000).
+## **3. Viewing the Running App**
 
-### ESLint
+Open your browser and go to:
 
-You can verify that the code obeys our coding standards by running ESLint over the code in the src/ directory with:
+**[http://localhost:3000](http://localhost:3000)**
+
+You may log in with any seeded accounts or register a new user.
+
+---
+
+## **4. ESLint**
+
+Verify coding standards with:
 
 ```
 $ npm run lint
 ```
+
+If all is well, you will see:
+
+```
+✔ No ESLint warnings or errors
+```
+
+---
 
 ### Application Design
 TBD

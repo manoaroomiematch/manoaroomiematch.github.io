@@ -52,7 +52,7 @@ Our code of conduct can be found [here](https://docs.google.com/document/d/1NyC7
 * [Mānoa RoomieMatch Organization](https://github.com/manoaroomiematch)
 * [Mānoa RoomieMatch Home Page](https://manoaroomiematch.github.io)
 * [Mānoa RoomieMatch Application](https://github.com/manoaroomiematch/manoaroomiematch.git)
-
+* [Mānoa RoomieMatch Organization](https://github.com/orgs/manoaroomiematch/projects/2/views/1)
 ---
 
 ## Deployment
@@ -208,7 +208,46 @@ We are interested in your experience using Mānoa RoomieMatch!
 ---
 
 ## Developer Guide
-TBD
+
+This section provides information for developers wishing to use this code base as a basis for their own development tasks.
+
+### Installation
+
+First, [install PostgreSQL](https://www.postgresql.org/download/). Then create a database for your application.
+
+Second, go to [https://github.com/RateMyTool/RateMyTools_SC](https://github.com/RateMyTool/RateMyTools_SC), and click the "Use this template" button. Complete the dialog box to create a new repository that you own that is initialized with this template's files.
+
+Third, go to your newly created repository, and click the "Clone or download" button to download your new GitHub repo to your local file system. Using [GitHub Desktop](https://desktop.github.com/) is a great choice if you use MacOS or Windows.
+
+Fourth, cd into the directory of your local copy of the repo, and install third party libraries with:
+
+```
+$ npm install
+```
+
+Fifth, create a .env file from the sample.env file. Edit the .env file to set the DATABASE_URL to point to your PostgreSQL database.
+
+### Running the system
+
+Once the libraries are installed and the database is configured, you can run the application by invoking:
+
+```
+$ npm run dev
+```
+
+The first time you run the app, it will create default data in the database.
+
+### Viewing the running app
+
+If all goes well, the application will appear at [http://localhost:3000](http://localhost:3000).
+
+### ESLint
+
+You can verify that the code obeys our coding standards by running ESLint over the code in the src/ directory with:
+
+```
+$ npm run lint
+```
 
 ### Application Design
 TBD
@@ -225,13 +264,48 @@ TBD
 
 ## Development History
 
-The following milestones document the development history of Mānoa RoomieMatch.
+The development process for BowFolios conformed to [Issue Driven Project Management](https://courses.ics.hawaii.edu/ics314f25/morea/project-management/reading-guidelines-idpm.html) practices. In a nutshell:
+
+- Development consists of a sequence of Milestones.
+- Each Milestone is specified as a set of tasks.
+- Each task is described using a GitHub Issue, and is assigned to a single developer to complete.
+- Tasks should typically consist of work that can be completed in 2-4 days.
+- The work for each task is accomplished with a git branch named “issue-XX”, where XX is replaced by the issue number.
+- When a task is complete, its corresponding issue is closed and its corresponding git branch is merged into master.
+- The state (todo, in progress, complete) of each task for a milestone is managed using a GitHub Project Board.
+- The following sections document the development history of ManoaRoomieMatch.
 
 ### Milestone 1: Mockup pages development
+The goal of Milestone 1 was to create AI-Generated photos of the UI for this project. Then, implement mockup pages to the website.
 
 Milestone 1 was managed using [Manoā RoomieMatch GitHub Project Board M1](https://github.com/orgs/manoaroomiematch/projects/2/views/1):
 
 ![](img/m1_issues.png)
+
+<div class="text-center p-4">
+  <img width="500px" src="../img/landing_page_mock.png" class="img-thumbnail" >
+</div>
+
+<div class="text-center p-4">
+  <img width="300px" src="../img/profile_setup_mock.png" class="img-thumbnail" >
+</div>
+
+<div class="text-center p-4">
+  <img width="500px" src="../img/user_home_page_mock.png" class="img-thumbnail" >
+</div>
+
+<div class="text-center p-4">
+  <img width="500px" src="../img/browser_matches_mock.png" class="img-thumbnail" >
+</div>
+
+<div class="text-center p-4">
+  <img width="300px" src="../img/match_details_mock.png" class="img-thumbnail" >
+</div>
+
+<div class="text-center p-4">
+  <img width="300px" src="../img/admin_home_page_mock.png" class="img-thumbnail" >
+</div>
+
 
 ### Milestone 2
 TBD

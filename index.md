@@ -100,7 +100,7 @@ This section provides a walkthrough of the Mānoa RoomieMatch user interface and
 The landing page is displayed when users visit the main RoomieMatch site. It introduces the platform’s purpose and key features.
 
 <div class="text-center p-4">
-  <img width="500px" src="../img/landing_page_mock.png" class="img-thumbnail" >
+  <img width="500px" src="../img/landing_m1.png" class="img-thumbnail" >
 </div>
 
 - Explanation of the platform  
@@ -112,7 +112,7 @@ The landing page is displayed when users visit the main RoomieMatch site. It int
 After logging in through UH email authentication, new users are directed to the profile setup page to complete a multi-step lifestyle questionnaire.
 
 <div class="text-center p-4">
-  <img width="300px" src="../img/profile_setup_mock.png" class="img-thumbnail" >
+  <img width="300px" src="../img/survey_m1.png" class="img-thumbnail" >
 </div>
 
 - Multi-step lifestyle survey  
@@ -124,7 +124,7 @@ After logging in through UH email authentication, new users are directed to the 
 Once a profile is completed, users are taken to their personalized home page.
 
 <div class="text-center p-4">
-  <img width="500px" src="../img/user_home_page_mock.png" class="img-thumbnail" >
+  <img width="500px" src="../img/profilepage_m1.png" class="img-thumbnail" >
 </div>
 
 - Overview of user’s profile  
@@ -137,7 +137,7 @@ Once a profile is completed, users are taken to their personalized home page.
 Users can explore potential roommates on the Browse Matches page.
 
 <div class="text-center p-4">
-  <img width="500px" src="../img/browser_matches_mock.png" class="img-thumbnail" >
+  <img width="500px" src="../img/browsermatches_m1" class="img-thumbnail" >
 </div>
 
 - List or grid of potential roommates  
@@ -150,7 +150,7 @@ Users can explore potential roommates on the Browse Matches page.
 Selecting a match brings the user to a detailed comparison page.
 
 <div class="text-center p-4">
-  <img width="300px" src="../img/match_details_mock.png" class="img-thumbnail" >
+  <img width="300px" src="../img/compatibility_m1.png" class="img-thumbnail" >
 </div>
 
 - Side-by-side comparison  
@@ -162,7 +162,7 @@ Selecting a match brings the user to a detailed comparison page.
 The Admin Home Page provides tools for managing the platform and maintaining content quality.
 
 <div class="text-center p-4">
-  <img width="300px" src="../img/admin_home_page_mock.png" class="img-thumbnail" >
+  <img width="300px" src="../img/adminpage_m1.png" class="img-thumbnail" >
 </div>
 
 - Manage users  
@@ -346,7 +346,7 @@ The goal of Milestone 1 was to create AI-Generated photos of the UI for this pro
 
 Milestone 1 was managed using [Manoā RoomieMatch GitHub Project Board M1](https://github.com/orgs/manoaroomiematch/projects/2/views/1):
 
-![](img/m1_issues.png)
+![](img/issues_m2.png)
 
 <div class="text-center p-4">
   <img width="500px" src="../img/landing_page_mock.png" class="img-thumbnail" >

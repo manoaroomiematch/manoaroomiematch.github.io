@@ -378,7 +378,7 @@ The goal of Milestone 2 was to use the completed front-end pages and improve the
 
 Milestone 2 was managed using [Manoā RoomieMatch GitHub Project Board M2](https://github.com/orgs/manoaroomiematch/projects/5/views/1?visibleFields=%5B%22Title%22%2C%22Status%22%2C%22Assignees%22%2C239381711%2C239381747%2C239381801%2C239381851%5D):
 
-[](img/issues_m2.png)
+![](img/issues_m2.png)
 
 ### Milestone 3
 TBD

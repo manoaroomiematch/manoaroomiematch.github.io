@@ -137,7 +137,8 @@ Once a profile is completed, users are taken to their personalized home page.
 Users can explore potential roommates on the Browse Matches page.
 
 <div class="text-center p-4">
-  <img width="500px" src="../img/browsematches_m1" class="img-thumbnail" >
+  <img width="500px" src="../img/browsematches_m1.png" class="img-thumbnail" >
+  <img width="500px" src="../img/browsematchesgrid_m1.png" class="img-thumbnail" >
 </div>
 
 - List or grid of potential roommates  

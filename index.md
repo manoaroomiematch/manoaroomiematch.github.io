@@ -23,10 +23,10 @@ Mānoa RoomieMatch is a web application that provides UH students with a persona
 
 It illustrates various technologies useful to ICS software engineering students, including:
 
-* HTML and CSS
-* Nextjs
-* React
-* React Bootstrap
+* [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/css/) for structuring web content and styling pages using standard markup and style sheets.
+* [Next.js](https://nextjs.org/) for server-side rendering and routing in React applications.
+* [React](https://react.dev/) for component-based UI implementation and efficient client-side rendering.
+* [React Bootstrap](https://react-bootstrap.netlify.app/) for responsive UI design using Bootstrap components in React.
 
 ### The problem:
 Every semester, hundreds of UH Mānoa students struggle to find compatible roommates—whether in the dorms (Hale Aloha, Gateway, Frear) or in off-campus apartments. This issue is amplified by the fact that approximately 31% to 36% of the UH Mānoa student population comes from out of state, meaning a large portion of students arrive in Hawaiʻi without established local connections or housing arrangements. Students commonly report conflicts due to mismatched sleep schedules, noise preferences, cleanliness expectations, guest habits, or study routines. Without a structured way to evaluate compatibility, students rely on random Snapchat and posts, word-of-mouth searching, or even dating apps, often resulting in stressful living situations, roommate conflicts, and frequent room switches.

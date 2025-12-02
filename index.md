@@ -212,7 +212,7 @@ We are interested in your experience using Mānoa RoomieMatch!
 
 This guide provides all the information for developers who wish to use this for their own development. Including installation, configuration, and running the Roomie Match application.
 
-## 1. Installation
+## Installation
 
 ### Install PostgreSQL
 
@@ -274,7 +274,7 @@ $ npx prisma db seed
 ```
 ---
 
-## 2. Running the System
+## Running the System
 
 Start the development server:
 
@@ -295,42 +295,27 @@ You may log in with any seeded accounts or register a new user.
 
 ---
 
-## 3. ESLint
-
-Verify coding standards with:
-
-```
-$ npm run lint
-```
-
-If all is well, you will see:
-
-```
-✔ No ESLint warnings or errors
-```
----
-
-## 4. Deployment : Vercel
+## Deployment : Vercel
 
 You can deploy Roomie Match to Vercel easily.
 
-### Step 1: Sign in to Vercel
+### Sign in to Vercel
 
 Go to https://vercel.com and log in with GitHub.
 
-### Step 2: Import Your Repository
+### Import Your Repository
 
 Click "New Project" → Import Git Repository
 
 Select your manoaroomiematch repository.
 
-### Step 3: Configure Environment Variables
+### Configure Environment Variables
 
 Add the same environment variables from your .env file to Vercel:
 
 DATABASE_URL pointing to a hosted PostgreSQL database (you can use Supabase, Heroku Postgres, or any cloud DB)
 
-### Step 4: Build & Deploy
+### Build & Deploy
 
 Vercel automatically detects a Next.js app.
 
@@ -338,7 +323,7 @@ Click Deploy.
 
 After deployment, Vercel will provide a URL for your live app.
 
-### Step 5: Optional
+### Optional
 
 If using Prisma, run migrations and seed your production database separately.
 
@@ -347,14 +332,54 @@ You can add a vercel.json if you need custom build settings.
 ---
 
 ### Application Design
-TBD
+This application is built using Next.js, React, and PostgreSQL. React and React Bootstrap handle the user interface, while all data operations run through Next.js API routes. The structure follows a standard full-stack pattern: forms on the client submit to server endpoints, which validate input and interact with the database.
 
 ### Data model
-TBD
+The data model is organized around several primary tables—including User, Profile, Match, Message, and the Lifestyle Category / Question / Option definitions. These core tables are supported by a set of relationship (join) tables, such as Lifestyle Response, Flag, Notification, and the paired-user structure inside the Match table.
+
+To illustrate the design approach, consider how the application records lifestyle question responses.
+
+Design choice #1: Give each user a field containing all of their lifestyle answers in a single embedded structure. While this works for simply displaying a user’s information, it becomes impractical when you need to search in the opposite direction—such as finding all users who selected a particular option or computing compatibility between two users. Scanning through embedded answers inside every user becomes slow, rigid, and difficult to extend.
+
+Design choice #2: The application instead stores lifestyle answers in a separate table, where each row represents one user’s response to one question. This provides a simple and consistent way to retrieve:
+* Responses for a given user
+* Find users associated with a particular question or option
+* Compare answers between users for matching
+* Update or expand the survey without changing the User table structure
+This design keeps data clean, avoids duplication, and makes the system easier to query and maintain.
+
+ManoaRoomieMatch implements Design choice #2 to provide clear and efficient relationships between its primary data tables by storing connections such as lifestyle responses, matches, messages, and reports in dedicated association tables rather than placing them inside user records.
+
+
+
+Certain fields in the schema, including user emails, question identifiers, and option identifiers, must be unique so they can function as dependable primary keys. These constraints ensure that each record can be referenced unambiguously and that relationships between tables remain consistent and predictable.
 
 ---
 
 ## Initialization
+TBD
+
+### Quality Assurance
+#### ESLint
+
+ManoaRoomieMatch includes a .eslintrc file which defines the coding standard in this application. You can run ESLint with:
+
+```
+$ npm run lint
+```
+
+If there are no ESLint errors, you will see:
+
+```
+✔ No ESLint warnings or errors
+```
+
+#### End to End Testing
+TBD
+
+---
+
+## Continuous Integration
 TBD
 
 ---

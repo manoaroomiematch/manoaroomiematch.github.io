@@ -53,6 +53,7 @@ Our code of conduct can be found [here](https://docs.google.com/document/d/1NyC7
 * [Mānoa RoomieMatch Home Page](https://manoaroomiematch.github.io)
 * [Mānoa RoomieMatch Application](https://github.com/manoaroomiematch/manoaroomiematch.git)
 * [M1 Project Board](https://github.com/orgs/manoaroomiematch/projects/2/views/1)
+* [M2 Project Board](https://github.com/orgs/manoaroomiematch/projects/5)
 
 ---
 
@@ -98,7 +99,7 @@ This section provides a walkthrough of the Mānoa RoomieMatch user interface and
 
 ### Landing Page
 
-The landing page is displayed when users visit the main RoomieMatch site. It introduces the platform’s purpose and key features.
+The landing page is displayed when users first visit RoomieMatch. It provides an introduction to the platform’s purpose and highlights its key features.
 
 <div class="text-center p-4">
   <img width="500px" src="../img/landing_m1.png" class="img-thumbnail" >
@@ -110,7 +111,7 @@ The landing page is displayed when users visit the main RoomieMatch site. It int
 
 ### Profile Setup Page
 
-After logging in through UH email authentication, new users are directed to the profile setup page to complete a multi-step lifestyle questionnaire.
+After logging in with UH email authentication, new users are directed to the profile setup page to complete a multi-step lifestyle questionnaire.
 
 <div class="text-center p-4">
   <img width="300px" src="../img/survey_m1.png" class="img-thumbnail" >
@@ -209,14 +210,13 @@ We are interested in your experience using Mānoa RoomieMatch!
 
 ## Developer Guide
 
-This guide provides all the information developers need to install, configure, and run the Roomie Match application.
+This guide provides all the information for developers who wish to use this for their own development. Including installation, configuration, and running the Roomie Match application.
 
 ## 1. Installation
 
 ### Install PostgreSQL
 
-Download and install PostgreSQL from the official website:
-[https://www.postgresql.org/download/](https://www.postgresql.org/download/)
+Download and install [PostgreSQL](https://www.postgresql.org/download/)
 
 Create a new database for the application:
 
@@ -226,10 +226,10 @@ $ createdb manoaroomiematch
 
 ### Create Your Repository
 
-1. Go to the template repository:
-   [https://github.com/manoaroomiematch/manoaroomiematch.git](https://github.com/manoaroomiematch/manoaroomiematch.git)
-2. Click "Use this template".
-3. Complete the dialog to generate your own repository based on the template.
+1. Visit the [ManoaRoomieMatch application GitHub page](https://github.com/manoaroomiematch/manoaroomiematch.git).
+2. Click "Use this template" to create your own repository with a copy of the application.
+3. Complete the dialog to generate your repository.
+4. Alternatively, you can download the repository as a zip file or fork it.
 
 ### Clone Your Repository
 

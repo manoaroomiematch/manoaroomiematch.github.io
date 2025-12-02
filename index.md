@@ -102,7 +102,7 @@ This section provides a walkthrough of the Mānoa RoomieMatch user interface and
 The landing page is displayed when users first visit RoomieMatch. It provides an introduction to the platform’s purpose and highlights its key features.
 
 <div class="text-center p-4">
-  <img width="500px" src="../img/landing_m1.png" class="img-thumbnail" >
+  <img width="500px" src="../img/landing_m2.png" class="img-thumbnail" >
 </div>
 
 - Explanation of the platform  
@@ -114,7 +114,7 @@ The landing page is displayed when users first visit RoomieMatch. It provides an
 After logging in with UH email authentication, new users are directed to the profile setup page to complete a multi-step lifestyle questionnaire.
 
 <div class="text-center p-4">
-  <img width="300px" src="../img/survey_m1.png" class="img-thumbnail" >
+  <img width="300px" src="../img/survey_m2.png" class="img-thumbnail" >
 </div>
 
 - Multi-step lifestyle survey  
@@ -126,7 +126,7 @@ After logging in with UH email authentication, new users are directed to the pro
 Once a profile is completed, users are taken to their personalized home page.
 
 <div class="text-center p-4">
-  <img width="500px" src="../img/profilepage_m1.png" class="img-thumbnail" >
+  <img width="500px" src="../img/profilepage_m2.png" class="img-thumbnail" >
 </div>
 
 - Overview of user’s profile  
@@ -139,8 +139,8 @@ Once a profile is completed, users are taken to their personalized home page.
 Users can explore potential roommates on the Browse Matches page.
 
 <div class="text-center p-4">
-  <img width="500px" src="../img/browsematches_m1.png" class="img-thumbnail" >
-  <img width="500px" src="../img/browsematchesgrid_m1.png" class="img-thumbnail" >
+  <img width="500px" src="../img/browsematches_m2.png" class="img-thumbnail" >
+  <img width="500px" src="../img/browsematchesgrid_m2.png" class="img-thumbnail" >
 </div>
 
 - List or grid of potential roommates  
@@ -153,7 +153,7 @@ Users can explore potential roommates on the Browse Matches page.
 Selecting a match brings the user to a detailed comparison page.
 
 <div class="text-center p-4">
-  <img width="300px" src="../img/compatibility_m1.png" class="img-thumbnail" >
+  <img width="300px" src="../img/compatibility_m2.png" class="img-thumbnail" >
 </div>
 
 - Side-by-side comparison  
@@ -165,7 +165,7 @@ Selecting a match brings the user to a detailed comparison page.
 The Admin Home Page provides tools for managing the platform and maintaining content quality.
 
 <div class="text-center p-4">
-  <img width="300px" src="../img/adminpage_m1.png" class="img-thumbnail" >
+  <img width="300px" src="../img/adminpage_m2.png" class="img-thumbnail" >
 </div>
 
 - Manage users  
@@ -437,8 +437,40 @@ Milestone 2 was managed using [Manoā RoomieMatch GitHub Project Board M2](https
 
 ![](img/issues_m2.png)
 
+<div class="text-center p-4">
+  <img width="500px" src="../img/landing_m1.png" class="img-thumbnail" >
+</div>
+
+<div class="text-center p-4">
+  <img width="300px" src="../img/profilepage_m1.png" class="img-thumbnail" >
+</div>
+
+<div class="text-center p-4">
+  <img width="500px" src="../img/user_home_page_mock.png" class="img-thumbnail" >
+</div>
+
+<div class="text-center p-4">
+  <img width="500px" src="../img/browsematchesgrid_m1.png" 
+  class="img-thumbnail" >
+</div>
+
+<div class="text-center p-4">
+  <img width="500px" src="../img/browsematches_m1.png" 
+  class="img-thumbnail" >
+</div>
+
+<div class="text-center p-4">
+  <img width="300px" src="../img/compatibility_m1.png" class="img-thumbnail" >
+</div>
+
+<div class="text-center p-4">
+  <img width="300px" src="../img/adminpage_m1.png" class="img-thumbnail" >
+</div>
+
 ### Milestone 3
-TBD
+Significantly improve the functionality of the website comparing to M2. Implement playwright testing to make sure that all the buttons/components on the pages work and incorporate a significant amount of “real” data into and from the database. 
+
+<!-- Put M3 project issues screenshot -->
 
 ---
 

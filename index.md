@@ -23,10 +23,10 @@ Mānoa RoomieMatch is a web application that provides UH students with a persona
 
 It illustrates various technologies useful to ICS software engineering students, including:
 
-* HTML and CSS
-* Nextjs
-* React
-* React Bootstrap
+* [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/css/) for structuring web content and styling pages using standard markup and style sheets.
+* [Next.js](https://nextjs.org/) for server-side rendering and routing in React applications.
+* [React](https://react.dev/) for component-based UI implementation and efficient client-side rendering.
+* [React Bootstrap](https://react-bootstrap.netlify.app/) for responsive UI design using Bootstrap components in React.
 
 ### The problem:
 Every semester, hundreds of UH Mānoa students struggle to find compatible roommates—whether in the dorms (Hale Aloha, Gateway, Frear) or in off-campus apartments. This issue is amplified by the fact that approximately 31% to 36% of the UH Mānoa student population comes from out of state, meaning a large portion of students arrive in Hawaiʻi without established local connections or housing arrangements. Students commonly report conflicts due to mismatched sleep schedules, noise preferences, cleanliness expectations, guest habits, or study routines. Without a structured way to evaluate compatibility, students rely on random Snapchat and posts, word-of-mouth searching, or even dating apps, often resulting in stressful living situations, roommate conflicts, and frequent room switches.
@@ -53,6 +53,7 @@ Our code of conduct can be found [here](https://docs.google.com/document/d/1NyC7
 * [Mānoa RoomieMatch Home Page](https://manoaroomiematch.github.io)
 * [Mānoa RoomieMatch Application](https://github.com/manoaroomiematch/manoaroomiematch.git)
 * [M1 Project Board](https://github.com/orgs/manoaroomiematch/projects/2/views/1)
+* [M2 Project Board](https://github.com/orgs/manoaroomiematch/projects/5)
 
 ---
 
@@ -98,7 +99,7 @@ This section provides a walkthrough of the Mānoa RoomieMatch user interface and
 
 ### Landing Page
 
-The landing page is displayed when users visit the main RoomieMatch site. It introduces the platform’s purpose and key features.
+The landing page is displayed when users first visit RoomieMatch. It provides an introduction to the platform’s purpose and highlights its key features.
 
 <div class="text-center p-4">
   <img width="500px" src="../img/landing_m1.png" class="img-thumbnail" >
@@ -110,7 +111,7 @@ The landing page is displayed when users visit the main RoomieMatch site. It int
 
 ### Profile Setup Page
 
-After logging in through UH email authentication, new users are directed to the profile setup page to complete a multi-step lifestyle questionnaire.
+After logging in with UH email authentication, new users are directed to the profile setup page to complete a multi-step lifestyle questionnaire.
 
 <div class="text-center p-4">
   <img width="300px" src="../img/survey_m1.png" class="img-thumbnail" >
@@ -209,14 +210,13 @@ We are interested in your experience using Mānoa RoomieMatch!
 
 ## Developer Guide
 
-This guide provides all the information developers need to install, configure, and run the Roomie Match application.
+This guide provides all the information for developers who wish to use this for their own development. Including installation, configuration, and running the Roomie Match application.
 
-## 1. Installation
+## Installation
 
 ### Install PostgreSQL
 
-Download and install PostgreSQL from the official website:
-[https://www.postgresql.org/download/](https://www.postgresql.org/download/)
+Download and install [PostgreSQL](https://www.postgresql.org/download/)
 
 Create a new database for the application:
 
@@ -226,10 +226,10 @@ $ createdb manoaroomiematch
 
 ### Create Your Repository
 
-1. Go to the template repository:
-   [https://github.com/manoaroomiematch/manoaroomiematch.git](https://github.com/manoaroomiematch/manoaroomiematch.git)
-2. Click "Use this template".
-3. Complete the dialog to generate your own repository based on the template.
+1. Visit the [ManoaRoomieMatch application GitHub page](https://github.com/manoaroomiematch/manoaroomiematch.git).
+2. Click "Use this template" to create your own repository with a copy of the application.
+3. Complete the dialog to generate your repository.
+4. Alternatively, you can download the repository as a zip file or fork it.
 
 ### Clone Your Repository
 
@@ -274,7 +274,7 @@ $ npx prisma db seed
 ```
 ---
 
-## 2. Running the System
+## Running the System
 
 Start the development server:
 
@@ -295,42 +295,27 @@ You may log in with any seeded accounts or register a new user.
 
 ---
 
-## 3. ESLint
-
-Verify coding standards with:
-
-```
-$ npm run lint
-```
-
-If all is well, you will see:
-
-```
-✔ No ESLint warnings or errors
-```
----
-
-## 4. Deployment : Vercel
+## Deployment : Vercel
 
 You can deploy Roomie Match to Vercel easily.
 
-### Step 1: Sign in to Vercel
+### Sign in to Vercel
 
 Go to https://vercel.com and log in with GitHub.
 
-### Step 2: Import Your Repository
+### Import Your Repository
 
 Click "New Project" → Import Git Repository
 
 Select your manoaroomiematch repository.
 
-### Step 3: Configure Environment Variables
+### Configure Environment Variables
 
 Add the same environment variables from your .env file to Vercel:
 
 DATABASE_URL pointing to a hosted PostgreSQL database (you can use Supabase, Heroku Postgres, or any cloud DB)
 
-### Step 4: Build & Deploy
+### Build & Deploy
 
 Vercel automatically detects a Next.js app.
 
@@ -338,7 +323,7 @@ Click Deploy.
 
 After deployment, Vercel will provide a URL for your live app.
 
-### Step 5: Optional
+### Optional
 
 If using Prisma, run migrations and seed your production database separately.
 
@@ -347,14 +332,54 @@ You can add a vercel.json if you need custom build settings.
 ---
 
 ### Application Design
-TBD
+This application is built using Next.js, React, and PostgreSQL. React and React Bootstrap handle the user interface, while all data operations run through Next.js API routes. The structure follows a standard full-stack pattern: forms on the client submit to server endpoints, which validate input and interact with the database.
 
 ### Data model
-TBD
+The data model is organized around several primary tables—including User, Profile, Match, Message, and the Lifestyle Category / Question / Option definitions. These core tables are supported by a set of relationship (join) tables, such as Lifestyle Response, Flag, Notification, and the paired-user structure inside the Match table.
+
+To illustrate the design approach, consider how the application records lifestyle question responses.
+
+Design choice #1: Give each user a field containing all of their lifestyle answers in a single embedded structure. While this works for simply displaying a user’s information, it becomes impractical when you need to search in the opposite direction—such as finding all users who selected a particular option or computing compatibility between two users. Scanning through embedded answers inside every user becomes slow, rigid, and difficult to extend.
+
+Design choice #2: The application instead stores lifestyle answers in a separate table, where each row represents one user’s response to one question. This provides a simple and consistent way to retrieve:
+* Responses for a given user
+* Find users associated with a particular question or option
+* Compare answers between users for matching
+* Update or expand the survey without changing the User table structure
+This design keeps data clean, avoids duplication, and makes the system easier to query and maintain.
+
+ManoaRoomieMatch implements Design choice #2 to provide clear and efficient relationships between its primary data tables by storing connections such as lifestyle responses, matches, messages, and reports in dedicated association tables rather than placing them inside user records.
+
+
+
+Certain fields in the schema, including user emails, question identifiers, and option identifiers, must be unique so they can function as dependable primary keys. These constraints ensure that each record can be referenced unambiguously and that relationships between tables remain consistent and predictable.
 
 ---
 
 ## Initialization
+TBD
+
+### Quality Assurance
+#### ESLint
+
+ManoaRoomieMatch includes a .eslintrc file which defines the coding standard in this application. You can run ESLint with:
+
+```
+$ npm run lint
+```
+
+If there are no ESLint errors, you will see:
+
+```
+✔ No ESLint warnings or errors
+```
+
+#### End to End Testing
+TBD
+
+---
+
+## Continuous Integration
 TBD
 
 ---

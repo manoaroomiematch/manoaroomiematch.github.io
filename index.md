@@ -400,9 +400,9 @@ This starts a browser session using the provided storage state and streams the g
 ---
 
 ## Continuous Integration
-![ci-manoaroomiematch](https://github.com/manoaroomiematch/manoaroomiematch/actions/workflows/ci.yml/badge.svg)
+[![ci-manoaroomiematch](https://github.com/manoaroomiematch/manoaroomiematch/actions/workflows/ci.yml/badge.svg)](https://github.com/manoaroomiematch/manoaroomiematch/actions/workflows/ci.yml)
 
-ManoaRoomieMatch uses [GitHub Actions](vhttps://docs.github.com/en/actions) to automatically run ESLint each time a commit is made to the default branch. You can see the results of all recent “workflows” at https://github.com/manoaroomiematch/manoaroomiematch/actions.
+ManoaRoomieMatch uses [GitHub Actions](vhttps://docs.github.com/en/actions) to automatically run ESLint and Playwright tests each time a commit is made to the default branch. You can see the results of all recent “workflows” at https://github.com/manoaroomiematch/manoaroomiematch/actions.
 
 The workflow definition file is quite simple and is located at [.github/workflows/ci.yml](https://github.com/manoaroomiematch/manoaroomiematch/blob/main/.github/workflows/ci.yml)
 
@@ -440,7 +440,7 @@ Significantly improve the functionality of the website comparing to M2. Implemen
 
 Milestone 3 was managed using [Manoā RoomieMatch GitHub Project Board M3](https://github.com/orgs/manoaroomiematch/projects/8):
 
-![](img/m2_done.png)
+![](img/m3_issues.png)
 
 ---
 

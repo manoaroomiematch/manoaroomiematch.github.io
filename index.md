@@ -54,6 +54,7 @@ Our code of conduct can be found [here](https://docs.google.com/document/d/1NyC7
 * [Mānoa RoomieMatch Application](https://github.com/manoaroomiematch/manoaroomiematch.git)
 * [M1 Project Board](https://github.com/orgs/manoaroomiematch/projects/2/views/1)
 * [M2 Project Board](https://github.com/orgs/manoaroomiematch/projects/5)
+* [M3 Project Board](https://github.com/orgs/manoaroomiematch/projects/8)
 
 ---
 
@@ -332,6 +333,7 @@ If there are no ESLint errors, you will see:
 ```
 
 #### End to End Testing
+
 ManoaRoomieMatch uses Playwright for end-to-end testing. Each .spec.ts file verifies that pages load correctly, UI components behave as expected, and key user flows work from the browser’s point of view.
 
 **Test Structure**

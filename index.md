@@ -101,104 +101,59 @@ This section provides a walkthrough of the Mānoa RoomieMatch user interface and
 
 The landing page is displayed when users first visit RoomieMatch. It provides an introduction to the platform’s purpose and highlights its key features.
 
-<div class="text-center p-4">
-  <img width="500px" src="../img/landing_m2.png" class="img-thumbnail" >
-</div>
-
-- Explanation of the platform  
-- “Start Matching” call-to-action  
-- Summary of AI features  
+![](img/landing_m2.png)
+![](img/landing2_m2.png)
+![](img/landing3_m2.png)
 
 ### Profile Setup Page
 
 After logging in with UH email authentication, new users are directed to the profile setup page to complete a multi-step lifestyle questionnaire.
 
-<div class="text-center p-4">
-  <img width="300px" src="../img/survey_m2.png" class="img-thumbnail" >
-</div>
-
-- Multi-step lifestyle survey  
-- Progress indicator  
-- Save-as-you-go  
+![](img/survey_m2.png)
 
 ### User Home Page
 
 Once a profile is completed, users are taken to their personalized home page.
 
-<div class="text-center p-4">
-  <img width="500px" src="../img/profilepage_m2.png" class="img-thumbnail" >
-</div>
+![](img/profilepage_m2.png)
 
-- Overview of user’s profile  
-- Compatibility highlights  
-- Quick access to matches  
-- Notifications  
+### Edit Profile Page
+
+Users can edit their lifestyle preferences, personal information, and housing details at any time.
+
+![](img/editprofile_m2.png)
+![](img/editprofile2_m2.png)
+![](img/editprofile3_m2.png)
+
+Changes made here help improve match accuracy and keep compatibility scores up to date.
 
 ### Browse Matches Page
 
 Users can explore potential roommates on the Browse Matches page.
 
-<div class="text-center p-4">
-  <img width="500px" src="../img/browsematches_m2.png" class="img-thumbnail" >
-  <img width="500px" src="../img/browsematchesgrid_m2.png" class="img-thumbnail" >
-</div>
-
-- List or grid of potential roommates  
-- Match percentages  
-- Preview of key traits  
-- “View Details” button  
+![](img/browsematches_m2.png)
+![](img/browsematcheslist_m2.png) 
 
 ### Match Details Page
 
 Selecting a match brings the user to a detailed comparison page.
 
-<div class="text-center p-4">
-  <img width="300px" src="../img/compatibility_m2.png" class="img-thumbnail" >
-</div>
+![](img/compatibility_m2.png) 
+![](img/compatibility2_m2.png) 
 
-- Side-by-side comparison  
-- AI-generated compatibility report  
-- Suggested conversation prompts  
+### Messages
+
+Users can communicate directly with their matched roommates.
+
+![](img/messages_m2.png)
+
+It provides a simple chat interface for sending and receiving messages, helping students coordinate and get to know each other before moving in.
 
 ### Admin Home Page
 
 The Admin Home Page provides tools for managing the platform and maintaining content quality.
 
-<div class="text-center p-4">
-  <img width="300px" src="../img/adminpage_m2.png" class="img-thumbnail" >
-</div>
-
-- Manage users  
-- Moderate flagged content  
-- Add/edit lifestyle categories  
-
----
-
-## Use Case Ideas
-
-### 1. New student signs up and sets up their profile 
-* Student visits the landing page
-* Reads about how RoomieMatch works
-* Logs in using UH authentication
-* Completes the lifestyle survey
-* Arrives at their home page
-* Reviews recommended matches
-* Learns how compatibility scoring works
-
-### 2. Student searches for compatible roommates
-* Logs in
-* Navigates to “Browse Matches”
-* Filters by dorm, budget, lifestyle traits
-* Selects a high-scoring match
-* Reads AI-generated compatibility explanation
-* Uses AI message template to reach out
-
-### 3. Admin monitors and manages the platform
-* Admin logs in
-* Goes to Admin Home Page
-* Reviews flagged profiles
-* Updates lifestyle categories
-* Manages user accounts
+![](img/adminpage_m2.png)
 
 ---
 
@@ -295,7 +250,7 @@ You may log in with any seeded accounts or register a new user.
 
 ---
 
-## Deployment : Vercel
+## Deployment
 
 You can deploy Roomie Match to Vercel easily.
 
@@ -350,7 +305,7 @@ This design keeps data clean, avoids duplication, and makes the system easier to
 
 ManoaRoomieMatch implements Design choice #2 to provide clear and efficient relationships between its primary data tables by storing connections such as lifestyle responses, matches, messages, and reports in dedicated association tables rather than placing them inside user records.
 
-
+![](img/data_model.png)
 
 Certain fields in the schema, including user emails, question identifiers, and option identifiers, must be unique so they can function as dependable primary keys. These constraints ensure that each record can be referenced unambiguously and that relationships between tables remain consistent and predictable.
 
@@ -364,7 +319,7 @@ This file defines the default development data and their relationships. These se
 ### Quality Assurance
 #### ESLint
 
-ManoaRoomieMatch includes a .eslintrc file which defines the coding standard in this application. You can run ESLint with:
+ManoaRoomieMatch uses the ESLint coding standard throughout the application. You can run it with:
 
 ```
 $ npm run lint
@@ -410,32 +365,6 @@ Milestone 1 was managed using [Manoā RoomieMatch GitHub Project Board M1](https
 
 ![](img/m1_done.png)
 
-<div class="text-center p-4">
-  <img width="500px" src="../img/landing_page_mock.png" class="img-thumbnail" >
-</div>
-
-<div class="text-center p-4">
-  <img width="300px" src="../img/profile_setup_mock.png" class="img-thumbnail" >
-</div>
-
-<div class="text-center p-4">
-  <img width="500px" src="../img/user_home_page_mock.png" class="img-thumbnail" >
-</div>
-
-<div class="text-center p-4">
-  <img width="500px" src="../img/browser_matches_mock.png" class="img-thumbnail" >
-</div>
-
-<div class="text-center p-4">
-  <img width="300px" src="../img/match_details_mock.png" class="img-thumbnail" >
-</div>
-
-<div class="text-center p-4">
-  <img width="300px" src="../img/admin_home_page_mock.png" class="img-thumbnail" >
-</div>
-
-**All mockup images were generated by ChatGPT.**
-
 ### Milestone 2
 The goal of Milestone 2 was to use the completed front-end pages and improve the functionality. In this Milestone we will be focusing on the back-end components (e.g database, page linking, API, etc.).
 
@@ -443,39 +372,10 @@ Milestone 2 was managed using [Manoā RoomieMatch GitHub Project Board M2](https
 
 ![](img/issues_m2.png)
 
-<div class="text-center p-4">
-  <img width="500px" src="../img/landing_m1.png" class="img-thumbnail" >
-</div>
-
-<div class="text-center p-4">
-  <img width="300px" src="../img/profilepage_m1.png" class="img-thumbnail" >
-</div>
-
-<div class="text-center p-4">
-  <img width="500px" src="../img/user_home_page_mock.png" class="img-thumbnail" >
-</div>
-
-<div class="text-center p-4">
-  <img width="500px" src="../img/browsematchesgrid_m1.png" 
-  class="img-thumbnail" >
-</div>
-
-<div class="text-center p-4">
-  <img width="500px" src="../img/browsematches_m1.png" 
-  class="img-thumbnail" >
-</div>
-
-<div class="text-center p-4">
-  <img width="300px" src="../img/compatibility_m1.png" class="img-thumbnail" >
-</div>
-
-<div class="text-center p-4">
-  <img width="300px" src="../img/adminpage_m1.png" class="img-thumbnail" >
-</div>
-
 ### Milestone 3
 Significantly improve the functionality of the website comparing to M2. Implement playwright testing to make sure that all the buttons/components on the pages work and incorporate a significant amount of “real” data into and from the database. 
 
+Milestone 3 was managed using [Manoā RoomieMatch GitHub Project Board M3](https://github.com/orgs/manoaroomiematch/projects/8):
 <!-- Put M3 project issues screenshot -->
 
 ---

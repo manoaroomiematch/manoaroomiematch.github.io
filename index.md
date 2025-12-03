@@ -357,7 +357,9 @@ Certain fields in the schema, including user emails, question identifiers, and o
 ---
 
 ## Initialization
-TBD
+The [config](https://github.com/manoaroomiematch/manoaroomiematch/tree/main/config) directory is intended to store the settings files. The repository currently contains: [config/settings.development.json](https://github.com/manoaroomiematch/manoaroomiematch/blob/main/config/settings.development.json).
+
+This file defines the default development data and their relationships. These settings give the app a consistent structure during development and testing. See the walkthrough videos for how these settings are used.
 
 ### Quality Assurance
 #### ESLint
@@ -380,7 +382,11 @@ TBD
 ---
 
 ## Continuous Integration
-TBD
+![ci-manoaroomiematch](https://github.com/manoaroomiematch/manoaroomiematch/actions/workflows/ci.yml/badge.svg)
+
+ManoaRoomieMatch uses [GitHub Actions](vhttps://docs.github.com/en/actions) to automatically run ESLint each time a commit is made to the default branch. You can see the results of all recent “workflows” at https://github.com/manoaroomiematch/manoaroomiematch/actions.
+
+The workflow definition file is quite simple and is located at [.github/workflows/ci.yml](https://github.com/manoaroomiematch/manoaroomiematch/blob/main/.github/workflows/ci.yml)
 
 ---
 
@@ -474,7 +480,7 @@ Significantly improve the functionality of the website comparing to M2. Implemen
 
 ---
 
-## Continuous Integration
+## Walkthrough Videos
 TBD
 
 ---

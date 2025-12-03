@@ -332,7 +332,70 @@ If there are no ESLint errors, you will see:
 ```
 
 #### End to End Testing
-TBD
+ManoaRoomieMatch uses Playwright for end-to-end testing. Each .spec.ts file verifies that pages load correctly, UI components behave as expected, and key user flows work from the browser’s point of view.
+
+**Test Structure**
+
+All tests live in `tests/` and are grouped by role:
+
+- User tests — profile editing, lifestyle survey, matches, messaging, and general navigation.
+- Admin tests — admin-only interfaces such as user management and content moderation.
+- Public tests — landing, sign-in, sign-up, and error pages.
+
+**Availability & Form Tests**
+
+The `availability.spec.ts` suite ensures:
+
+- All public and authenticated routes load.
+- Navigation (including the navbar) works for both user and admin sessions.
+- Sign-in, sign-up, profiles, surveys, messages, password change accept valid input and allow submission.
+- Session fixtures provide pre-authenticated user and admin contexts.
+
+**Running Tests**
+
+Set up the environment:
+
+```
+npm run dev
+```
+
+Run the full suite:
+
+```
+npx playwright test
+```
+
+Open the HTML report:
+
+```
+npx playwright show-report
+```
+
+Running Specific Test Groups
+
+You can filter by suite name:
+
+```
+npx playwright test -g "Public Pages"
+npx playwright test -g "Authenticated User Pages"
+npx playwright test -g "Admin Pages"
+npx playwright test -g "Navigation"
+npx playwright test -g "Form Validation"
+```
+
+**Writing New Tests**
+
+Create a new `.spec.ts` file in tests/.
+
+Playwright includes a code generation utility that captures UI actions and outputs equivalent test code, which can be useful for rapidly creating new and accurate end-to-end tests.
+
+Launch the tool with:
+
+```
+npx playwright codegen http:/localhost:3000--load-storage=<user-auth>.json
+```
+
+This starts a browser session using the provided storage state and streams the generated Playwright commands to the console. The resulting code can be copied into a new `.spec.ts` file and refined as needed.
 
 ---
 
@@ -370,13 +433,14 @@ The goal of Milestone 2 was to use the completed front-end pages and improve the
 
 Milestone 2 was managed using [Manoā RoomieMatch GitHub Project Board M2](https://github.com/orgs/manoaroomiematch/projects/5/views/1?visibleFields=%5B%22Title%22%2C%22Status%22%2C%22Assignees%22%2C239381711%2C239381747%2C239381801%2C239381851%5D):
 
-![](img/issues_m2.png)
+![](img/m2_done.png)
 
 ### Milestone 3
 Significantly improve the functionality of the website comparing to M2. Implement playwright testing to make sure that all the buttons/components on the pages work and incorporate a significant amount of “real” data into and from the database. 
 
 Milestone 3 was managed using [Manoā RoomieMatch GitHub Project Board M3](https://github.com/orgs/manoaroomiematch/projects/8):
-<!-- Put M3 project issues screenshot -->
+
+![](img/m2_done.png)
 
 ---
 

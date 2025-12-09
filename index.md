@@ -160,7 +160,7 @@ The Admin Home Page provides tools for managing the platform and maintaining con
 
 ## Community Feedback
 
-We are interested in your experience using Mānoa RoomieMatch!
+We are interested in your experience using Mānoa RoomieMatch! If you have the time, please fill out our [feedback form](https://forms.gle/dbzn2n8gtAp3Lnh1A). Thank you for using Mānoa RoomieMatch!
 
 ---
 
@@ -315,7 +315,7 @@ Certain fields in the schema, including user emails, question identifiers, and o
 ## Initialization
 The [config](https://github.com/manoaroomiematch/manoaroomiematch/tree/main/config) directory is intended to store the settings files. The repository currently contains: [config/settings.development.json](https://github.com/manoaroomiematch/manoaroomiematch/blob/main/config/settings.development.json).
 
-This file defines the default development data and their relationships. These settings give the app a consistent structure during development and testing. See the walkthrough videos for how these settings are used.
+This file defines the default development data and their relationships. These settings give the app a consistent structure during development and testing.
 
 ### Quality Assurance
 #### ESLint
@@ -443,11 +443,6 @@ Significantly improve the functionality of the website comparing to M2. Implemen
 Milestone 3 was managed using [Manoā RoomieMatch GitHub Project Board M3](https://github.com/orgs/manoaroomiematch/projects/8):
 
 ![](img/m3_issues.png)
-
----
-
-## Walkthrough Videos
-TBD
 
 ---
 

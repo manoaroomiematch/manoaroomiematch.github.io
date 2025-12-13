@@ -159,6 +159,7 @@ The Admin Home Page provides tools for managing the platform and maintaining con
 ---
 
 ## Community Feedback
+<!-- Input feedback summary HERE -->
 
 We are interested in your experience using Mānoa RoomieMatch! If you have the time, please fill out our [feedback form](https://forms.gle/dbzn2n8gtAp3Lnh1A). Thank you for using Mānoa RoomieMatch!
 
@@ -443,6 +444,12 @@ Significantly improve the functionality of the website comparing to M2. Implemen
 Milestone 3 was managed using [Manoā RoomieMatch GitHub Project Board M3](https://github.com/orgs/manoaroomiematch/projects/8):
 
 ![](img/m3_issues.png)
+<!-- Replace M# completed page HERE -->
+---
+
+## Effort Estimation Tracking Sheet
+
+Team members input their effort estimation on [this Google Sheets](https://docs.google.com/spreadsheets/d/131Lt_e7YwJXXsNmEqOWiloJbuQNpnleJ_SxnWkuVZNI/edit?usp=sharing). It includes the summary of their issues and methods for tracking.
 
 ---
 
@@ -450,10 +457,6 @@ Milestone 3 was managed using [Manoā RoomieMatch GitHub Project Board M3](https
 
 After building the core features, the following advanced options can enhance the platform:
 
-* Dorm Recommendation System – Implement AI-based suggestions for UH dorms based on user preferences such as noise level, budget, room type (double, suite, apartment), and AC availability.
-* Language Translation for International Students – Add automatic translation of profiles, bios, and messages to help international students communicate and encourage cross-cultural roommate matching.
 * UH Authentication for Verification – Integrate UH Single Sign-On to verify that all users are current UH students, improving trust and campus safety.
 * Advanced Matching Insights – Display analytics such as compatibility heatmaps, potential conflict alerts, and personalized compromise suggestions to help users make informed roommate choices.
-* Roommate Agreement Generator – Create an AI-driven roommate agreement that outlines expectations for cleaning schedules, guests, quiet hours, shared spaces, and privacy.
-* Schedule Compatibility Sync – Sync users’ UH class schedules to highlight overlapping free hours, sleep routines (morning vs. night), and optimal times for shared facilities.
-* Household Planner – Build shared tools for roommates to manage chore rotations, track expenses, and coordinate grocery lists.
+* Messaging system: Users can now message other user despite their match compatibility.

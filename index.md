@@ -364,7 +364,7 @@ All tests live in `tests/` and are grouped by role:
 
 **Availability & Form Tests**
 
-The `availability.spec.ts` suite ensures:
+The `auth-utilis.ts`,`core-features.spec.ts`,`signin-suspension.spec.ts` ensures:
 
 - All public and authenticated routes load.
 - Navigation (including the navbar) works for both user and admin sessions.

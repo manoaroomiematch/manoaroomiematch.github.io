@@ -160,6 +160,12 @@ The Admin Home Page provides tools for managing the platform and maintaining con
 
 ## Community Feedback
 <!-- Input feedback summary HERE -->
+Base on UH user's experience, the website is easy to navigate and appealing to look at. Users enjoy the matching functionality, where they could see other's profile pictures and different catagories on why they were compatible to become roommates.
+
+Some users say that there should be more questions for the lifestyle survey to get more personalize matches and more filters on potential roomates.
+
+![](img/user_survey1.png) 
+![](img/user_survey2.png) 
 
 We are interested in your experience using Mānoa RoomieMatch! If you have the time, please fill out our [feedback form](https://forms.gle/dbzn2n8gtAp3Lnh1A). Thank you for using Mānoa RoomieMatch!
 

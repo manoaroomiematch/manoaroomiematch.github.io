@@ -102,29 +102,25 @@ This section provides a walkthrough of the Mānoa RoomieMatch user interface and
 
 The landing page is displayed when users first visit RoomieMatch. It provides an introduction to the platform’s purpose and highlights its key features.
 
-![](img/landing_m2.png)
-![](img/landing2_m2.png)
-![](img/landing3_m2.png)
+![](img/landing_m3.png)
 
 ### Profile Setup Page
 
 After logging in with UH email authentication, new users are directed to the profile setup page to complete a multi-step lifestyle questionnaire.
 
-![](img/survey_m2.png)
+![](img/survey_m3.png)
 
 ### User Home Page
 
 Once a profile is completed, users are taken to their personalized home page.
 
-![](img/profilepage_m2.png)
+![](img/profile_m3.png)
 
 ### Edit Profile Page
 
 Users can edit their lifestyle preferences, personal information, and housing details at any time.
 
-![](img/editprofile_m2.png)
-![](img/editprofile2_m2.png)
-![](img/editprofile3_m2.png)
+![](img/edit_m3.png)
 
 Changes made here help improve match accuracy and keep compatibility scores up to date.
 
@@ -132,21 +128,36 @@ Changes made here help improve match accuracy and keep compatibility scores up t
 
 Users can explore potential roommates on the Browse Matches page.
 
-![](img/browsematches_m2.png)
-![](img/browsematcheslist_m2.png) 
+![](img/browse_m3.png)
 
 ### Match Details Page
 
 Selecting a match brings the user to a detailed comparison page.
 
-![](img/compatibility_m2.png) 
-![](img/compatibility2_m2.png) 
+![](img/matchdetails_m3.png) 
+
+### My Matches
+
+The My Matches displays users' saved, accepted, and rejected matches. Users can review their interactions with other roommates and track the status of potential living arrangements.
+
+![](img/saved_m3.png) 
+![](img/accepted_m3.png) 
+![](img/passed_m3.png) 
+
+### Resources
+
+The Resources provide helpful information for students, including housing guides and campus life tips to support their roommate search and transition to on-campus or off-campus living.
+
+![](img/housing_m3.png) 
+![](img/campuslife_m3.png) 
+
 
 ### Messages
 
 Users can communicate directly with their matched roommates.
 
-![](img/messages_m2.png)
+![](img/message_m3.png)
+![](img/message2_m3.png)
 
 It provides a simple chat interface for sending and receiving messages, helping students coordinate and get to know each other before moving in.
 
@@ -154,7 +165,7 @@ It provides a simple chat interface for sending and receiving messages, helping 
 
 The Admin Home Page provides tools for managing the platform and maintaining content quality.
 
-![](img/adminpage_m2.png)
+![](img/admin_m3.png)
 
 ---
 
@@ -445,12 +456,12 @@ Milestone 2 was managed using [Manoā RoomieMatch GitHub Project Board M2](https
 ![](img/m2_done.png)
 
 ### Milestone 3
-Significantly improve the functionality of the website comparing to M2. Implement playwright testing to make sure that all the buttons/components on the pages work and incorporate a significant amount of “real” data into and from the database. 
+Significantly improved the functionality of the website comparing to M2. Implemented playwright testing to make sure that all the buttons/components on the pages work and incorporate a significant amount of “real” data into and from the database. 
 
 Milestone 3 was managed using [Manoā RoomieMatch GitHub Project Board M3](https://github.com/orgs/manoaroomiematch/projects/8):
 
-![](img/m3_issues.png)
-<!-- Replace M# completed page HERE -->
+![](img/done_m3.png)
+
 ---
 
 ## Effort Estimation Tracking Sheet
